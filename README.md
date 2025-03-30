@@ -1,4 +1,8 @@
-# Celestia Light Node Implementation
+## Dashboard Preview
+
+![Celestia Light Node Dashboard](screenshots/dashboard.png)
+
+The custom monitoring dashboard provides real-time visualization of node status, resource utilization, and log analysis.# Celestia Light Node Implementation
 
 ![Celestia Network](https://raw.githubusercontent.com/celestiaorg/celestia-brand/main/celestia-logo-horizontal.svg)
 
