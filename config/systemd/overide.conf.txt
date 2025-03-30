@@ -1,0 +1,4 @@
+[Service]
+CPUWeight=50
+MemoryLimit=2G
+IOWeight=50

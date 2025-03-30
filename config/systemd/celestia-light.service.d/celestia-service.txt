@@ -1,0 +1,25 @@
+[Unit]
+Description=Celestia Light Node
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=issues47
+ExecStart=/usr/local/bin/celestia light start --core.ip https://rpc-celestia.pops.one --p2p.network celestia
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=65535
+Environment="HOME=/home/issues47"
+WorkingDirectory=/home/issues47
+
+# Security hardening
+ProtectSystem=full
+PrivateTmp=true
+NoNewPrivileges=true
+ProtectHome=read-only
+ProtectControlGroups=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+RestrictNamespaces=true
+RestrictRealtime=true
+RestrictSUIDSGID=true
